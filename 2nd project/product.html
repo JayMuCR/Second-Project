@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Store</title>
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="index.html">
+        <img class="header__logo" src="/img/logo.png" alt="logo" />
+      </a>
+    </header>
+
+    <!-- Nav -->
+    <nav class="nav">
+      <a class="nav__link nav__link--active" href="index.html">Store</a>
+      <a class="nav__link" href="aboutUs.html">About us</a>
+    </nav>
+
+    <!-- Main -->
+
+    <main class="container">
+      <h1>Selected Shirt</h1>
+      <div class="shirt">
+        <img class="shirt__image" src="/img/Tshirt-design.png" alt="shirtImage" />
+        <div class="shirt__content">
+          <p>
+            Nam ut libero turpis. Vestibulum sit amet massa faucibus, sodales
+            diam sit amet, dignissim purus. Aliquam in elit orci. Praesent non
+            nisl ultrices, venenatis est vel, pellentesque urna.
+          </p>
+          <form class="form">
+            <select class="form__space">
+              <option disabled selected>--Select size--</option>
+              <option value="">Small</option>
+              <option value="">Medium</option>
+              <option value="">Large</option>
+            </select>
+            <input
+              class="form__space"
+              type="number"
+              placeholder="Amount"
+              min="1"
+            />
+            <button class="form__submit" type="submit">Add to cart</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">Frontend Store. All rights reserved 2022.</p>
+    </footer>
+  </body>
+</html>
